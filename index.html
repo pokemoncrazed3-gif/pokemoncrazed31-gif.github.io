@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Gourmet Bistro – Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="page-grid" class="page-grid">
+            <header id="site-header" aria-labelledby="site-title" data-theme="hero">
+                <img id="site-logo" src="images/logo.svg" alt="The Gourmet Bistro logo" width="120">
+                <h1 id="site-title">The Gourmet Bistro</h1>
+                <nav id="primary-nav" aria-label="Primary">
+                    <ul id="nav-list" class="nav-flex">
+                        <li><a id="nav-home" href="index.html" aria-current="page">Home</a></li>
+                        <li><a id="nav-about" href="about.html">About</a></li>
+                        <li><a id="nav-menu" href="menu.html">Menu</a></li>
+                        <li><a id="nav-contact" href="contact.html">Contact</a></li>
+                        <li><a id="nav-reservations" href="https://www.opentable.com/" target="_blank" rel="noopener">Reservations</a></li>
+                </ul>
+                </nav>
+            </header>
+            <main id="main">
+                <section id="hero" aria-labelledby="hero-heading">
+                    <img id="hero-photo" src="images/bistro-hero.jpg" alt="The Gourmet Bistro dining room with burgundy and gold accents" width="1200">
+                    <div id="hero-overlay" class="overlay">
+                        <h2 id="hero-heading">Fusion Fine Dining</h2>
+                        <p id="hero-tagline">Modern flavor. Classic technique.</p>
+                    </div>
+                </section>
+                <section id="welcome-section" class="card" aria-labelledby="welcome-heading">
+                    <h2 id="welcome-heading">Welcome </h2>
+                    <p>
+                        Welcome to the Gourmet Bistro! Here, we pride ourselves on our fantastic, high quality cuisine from different parts of the world. We don't just have local flavors, but we also have international food options to choose from! 
+                        
+                        <q>Every dish tells a story, a journey from the soil to the plate.</q>
+                    </p>
+                    <p>
+                        We welcome you to make a reservation online and come check out what we have to offer! We would love to see you come dine with us, and experience some of the finest cuisine in the area!
+                    <p>
+                </section>
+                <section id="bistro-video-section" aria-labelledby="bistro-video-heading">
+                    <h2 id="bistro-video-heading">Inside Gourmet Bistro</h2>
+                    <p>Take a short visual tour of the dining room, featured dishes, and the atmosphere of Gourmet Bistro.</p>
+                    <video id="bistro-video" controls width="720">
+                        <source src="media/bistro-tour.mp4" type="video/mp4">
+                        <track id="bistro-video-captions" src="media/bistro-tour-captions.vtt" kind="captions" srclang="en" label="English captions" default>
+                        Your browser does not support the video tag.
+                    </video>
+                    <img id="featured-dish" src="images/dish.jpg" alt="Featured Dish">
+                </section>
+                <section id="promo-video-section" aria-labelledby="promo-video-heading">
+                    <h2 id="promo-video-heading">Featured Promotion</h2>
+                    <p>Watch our featured promotional video for a preview of the Gourmet Bistro experience.</p>
+                    <iframe id="promo-video-frame" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Gourmet Bistro Promotional Video" allowfullscreen></iframe>
+                </section>
+                <hr>
+                <picture id="hero-picture">
+                    <source srcset="images/dining-room.webp" type="image/webp">
+                    <img id="hero-image" src="images/dining-room.jpg" alt="Elegant dining room with burgundy and gold accents"> 
+                </picture>
+                <hr>
+                <button id="reservation-button">Reserve Now</button>
+                <p id="welcome-message">Welcome to The Gourmet Bistro!</p>
+            </main>
+            <footer id="site-footer">
+                <div class="restaurant address">
+                    <p>Email: <a id="email-link" href="mailto:contact@gourmetbistro.com">contact@gourmetbistro.com</a></p>
+                    <p>Address: 123 Culinary Lane, Flavor Town, MO 60301, USA</p>
+                    <p>Phone Number: <a id="phone-link" href="tel:+15551234567">(555) 123-4567</a></p>
+                </div>
+                <div class="footer links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer social">
+                    <a href="#" class="social icon">Facebook</a>
+                    <a href="#" class="social icon">Instagram</a>
+                    <a href="#" class="social icon">Twitter X</a>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2026 The Gourmet Bistro</p>
+                </div>
+            </footer>
+        </div>
+        <script>console.log("Embedded Gourmet Bistro script running");</script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

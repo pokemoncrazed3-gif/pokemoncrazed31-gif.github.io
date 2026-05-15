@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Gourmet Bistro – About</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="site-header" aria-labelledby="site-title">
+            <img id="site-logo" src="images/logo.svg" alt="The Gourmet Bistro logo" width="120">
+            <h1 id="site-title">About The Gourmet Bistro</h1>
+            <nav id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a id="nav-home" href="index.html">Home</a></li>
+                <li><a id="nav-about" href="about.html" aria-current="page">About</a></li>
+                <li><a id="nav-menu" href="menu.html">Menu</a></li>
+                <li><a id="nav-contact" href="contact.html">Contact</a></li>
+                <li><a id="nav-reservations" href="https://www.opentable.com/" target="_blank" rel="noopener">Reservations</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <section id="story-section" class="card" aria-labelledby="story-heading">
+                <h2 id="story-heading">Our Story</h2>
+                <p>
+                    When we opened, we were just a small, quiet restaurant that many people overlooked. Slowly as more and more people came and checked us out, we grew. People started talking about us and our fine food, getting more people interested. Today, we are a busy, bustling restaurant known for our great food!
+                </p>
+                <p>
+                    <a href="index.html">Home</a>
+                </p>
+                <p><a href="https://www.loc.gov/" target="_blank" rel="noopener noreferrer">Visit the Library of Congress</a></p>
+            </section>
+        <hr>
+            <section id="chef-section" class="card" aria-labelledby="chef-heading">
+                <h2 id="chef-heading">Chef Emilia Roux</h2>
+                <figure id="chef-figure">
+                    <img id="chef-image" src="images/chef-roux.jpg" alt="Chef Emilia Roux plating a dish">
+                    <figcaption id="chef-caption">Chef Emilia Roux</figcaption>
+                </figure>
+                <h3>Biography</h3>
+                <p>
+                    Chef Roux's culinary adventure began at the prestigious Institute Paul Bocuse in Lyon, where she honed her skills under the tutelage of renowned chefs. Her insatiable curiosity and love for global cuisines led her to travel across Europe and Asia, gathering a palette of flavors, techniques, and inspirations.
+                </p>
+                <h3>Philosophy</h3>
+                <blockquote cite="https://www.example.com">
+                    "Every dish tells a story, a journey from the soil to the plate. At Gourmet Bistro, we don't just cook; we create culinary experiences that linger in your memories long after the last bite."
+                </blockquote>
+                <p>
+                    <cite>magazines</cite>
+                </p>
+                <h3>Accolades</h3>
+                <ul>
+                    <li>Michelin stars</li>
+                    <li>Bon Appétit</li>
+                    <li>Gourmet</li>
+                </ul>
+            </section>
+            <section id="chef-audio-section" aria-labelledby="chef-audio-heading">
+                <h2 id="chef-audio-heading">A Message from Chef Roux</h2>
+                <p>Listen to Chef Emilia Roux describe the inspiration behind Gourmet Bistro’s culinary philosophy.</p>
+                <audio id="chef-audio" controls>
+                    <source src="media/chef-message.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+        </main>
+        <footer id="site-footer">
+            <div class="restaurant address">
+                <p>Email: <a id="email-link" href="mailto:contact@gourmetbistro.com">contact@gourmetbistro.com</a></p>
+                <p>Address: 123 Culinary Lane, Flavor Town, Mo 60301, USA</p>
+                <p>Phone Number: <a id="phone-link" href="tel:+15551234567">(555) 123-4567</a></p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer social">
+                <a href="#" class="social icon">Facebook</a>
+                <a href="#" class="social icon">Instagram</a>
+                <a href="#" class="social icon">Twitter X</a>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 The Gourmet Bistro</p>
+            </div>
+        </footer>
+    </body>
+</html>
