@@ -1,0 +1,249 @@
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #FFFDD0;
+    color: #3C3C3C;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cream);
+    color: var(--dark-gray);
+}
+h1{
+    color: #800020;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+h2{
+    color: #DAA520;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+p{
+    line-height: 1.5;
+    text-align: justify;
+}
+#menu-section h3 {text-transform: uppercase;}
+#menu-section ul { list-style-type: square; }
+#menu-section ol { list-style-type: upper-roman; }
+:root {
+  --burgundy: #800020;
+  --gold: #DAA520;
+  --cream: #FFFDD0;
+  --dark-gray: #3C3C3C;
+  --white: #ffffff;
+}
+#site-header {
+    color: var(--dark-gray);
+}
+#site-header[data-theme="hero"] {
+  background-image: linear-gradient(rgba(128, 0, 32, 0.75), rgba(60, 60, 60, 0.75)), url("images/bistro-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#site-title {
+  color: var(--gold);
+}
+#primary-nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+#primary-nav a:hover {
+  text-decoration: underline;
+}
+a[href^="https"] {
+  color: var(--burgundy);
+}
+a:focus {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}
+h2::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--gold);
+    margin-right: 0.5rem;
+}
+.card {
+    background-color: var(--white);
+    padding: 1rem;
+    border: 1px solid var(--gold);
+    margin: 1rem 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+#primary-nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.contrast-note{
+    background-color: var(--white);
+    color: var(--dark-gray);
+    border-left: 6px solid var(--burgundy);
+    padding: 0.75rem;
+}
+#nav-list.nav-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.menu-flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.menu-card{
+  flex: 1 1 240px;
+  padding: 1rem;
+  [data-item="torte"] { order: -1; }
+}
+#page-grid.page-grid {
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "nav nav"
+  "main main"
+  "footer footer";
+  gap: 1rem;
+}
+#site-header { grid-area: header; }
+#primary-nav { grid-area: nav; }
+#main { grid-area: main; }
+#site-footer { grid-area: footer; }
+#menu-grid.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: stretch;
+}
+@media (max-width: 700px) {#menu-grid.menu-grid { grid-template-columns: 1fr;}}
+.menu-item[data-dish="torte"] { grid-column: 1 / 3; }
+#reservation-slots {
+    width: 100%;
+    border-collapse: collapse;
+}
+#reservation-slots th,
+#reservation-slots td {
+    border: 1px solid #DAA520;
+    padding: 0.75rem;
+    text-align: left;
+}
+#reservation-slots th {
+    background-color: #800020;
+    color: #FFFDD0;
+}
+#reservation-slots caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+#reservations-table-section {
+    margin-top: 2rem;
+}
+@media (max-width: 700px) {#reservation-slots {display: block;}}
+@media (max-width: 700px) {#reservation-slots {overflow-x: auto;} }
+#reservation-slots tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+#menu-table {
+  width: 100%; 
+  border-collapse: collapse;
+}
+#menu-table th,
+#menu-table td {
+  border: 1px solid #DAA520;
+  padding: 0.75rem;
+}
+@media (max-width: 700px) {
+  #menu-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+#main {
+ width: 90%;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+img {
+ max-width: 100%;
+ height: auto;
+}
+@media (max-width: 700px) {
+#nav-list {
+ flex-direction: column;
+ }
+}
+#chef-audio, #bistro-video, #promo-video-frame {
+  max-width: 100%;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#chef-audio-section, #bistro-video-section, #promo-video-section {
+  background-color: var(--white);
+  padding: 1rem;
+  border: 1px solid var(--gold);
+  margin: 2rem 0;
+}
+@media (max-width: 700px) {
+  #promo-video-frame {
+    width: 100%;
+    height: auto;
+  }
+  #bistro-video {
+    width: 100%;
+  }
+}
+#nav-list a {
+  color: --white;
+  transition: transform 0.3s ease;
+}
+#nav-list a:hover {
+  color: var(--gold);
+}
+.menu-item {
+  transition: transform 0.3s ease;
+}
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: none;
+}
+#reservation-button {
+  transition: transform 0.3s ease;
+}
+#reservation-button:hover {
+  transform: scale(1.1);
+}
+#featured-dish {
+  transition: transform 0.4s ease;
+}
+#featured-dish:hover {
+  transform: rotate(3deg);
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+#hero-section {
+  fadeIn {
+    transform: 1s ease-in;
+  }
+}
+@keyframes highlight {
+  from {transform: scale(2);}
+  to {transform: scale (1);}
+}
+.featured {
+  animation: highlight 2s infinite;
+}
+@media (max-width: 700px) {
+  .featured {animation: none;}
+}
+@media (prefers-reduced-motion: reduce) {
+  animation{none;}
+  transition: {none;}
+};
+
